@@ -1,6 +1,6 @@
 # acc
 <img src="https://i.ibb.co/GtYsZ6t/gifmaker-20200220022232.gif" height="585" width="360">
-<br>AgressivCode Checker CLI
+<br><b>AgressivCode Checker CLI</b>
 <br>[?] ACc menu
 <br>[1]. Amazon Email Valid checker
 <br>[2]. Apple Email valid checker
@@ -16,7 +16,7 @@
 <br>requirements: curl bash
 <br>run: $ bash acc.sh
 <br>
-<br>your in free Version v.1
+<br><b>your in free Version v.1</b>
 <br>
 <br>Pro Version
 <br>
