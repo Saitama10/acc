@@ -1,5 +1,5 @@
 # acc
-<a href="https://ibb.co/dLCbNTL"><img src="https://i.ibb.co/GtYsZ6t/gifmaker-20200220022232.gif" width="250" height="500></a>
+<img src="https://i.ibb.co/GtYsZ6t/gifmaker-20200220022232.gif" width="250" height="500>
 <br>AgressivCode Checker CLI
 <br>[?] ACc menu
 <br>[1]. Amazon Email Valid checker
